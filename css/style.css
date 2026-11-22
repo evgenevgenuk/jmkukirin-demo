@@ -419,6 +419,9 @@ s { color: var(--c-ink-2); font-size: var(--fs-sm); font-weight: 400; }
 .photo-ctrl p { margin: 0; font-size: var(--fs-sm); }
 .thumb { display: block; width: 40px; height: 40px; object-fit: cover; border-radius: 8px; background: var(--c-img-bg); }
 
+.cod-note { margin: 0; padding: var(--s-3) var(--s-4); border-radius: var(--radius); background: var(--c-warn-bg); color: var(--c-warn); font-size: var(--fs-sm); }
+.cod-note[hidden] { display: none; }
+
 /* демо-версія */
 .demo-bar { background: var(--c-surface); color: var(--c-ink-2); border-bottom: 1px solid var(--c-rule); font-size: var(--fs-sm); text-align: center; padding: 6px var(--s-4); }
 .catalog .grid > [hidden] { display: none; }

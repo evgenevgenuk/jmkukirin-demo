@@ -88,6 +88,15 @@
     r.addEventListener('change', function () { resetWh(true); whIn.focus(); wh.run(); });
   });
 
+  // підказка: накладений платіж у поштомат оплачується лише онлайн
+  var codNote = form.querySelector('[data-cod-note]');
+  function syncCodNote() {
+    var pay = form.querySelector('[name=payment_method]:checked');
+    if (codNote) codNote.hidden = !(kind() === 'postomat' && pay && pay.value === 'cod');
+  }
+  form.addEventListener('change', function (e) { if (e.target.name === 'payment_method' || e.target.name === 'np_kind') syncCodNote(); });
+  syncCodNote();
+
   form.addEventListener('submit', function (e) {
     if (e.submitter && e.submitter.name === 'apply_promo') return;
     if (!cityRef.value) { e.preventDefault(); hint.textContent = 'Оберіть місто зі списку.'; cityIn.focus(); }
