@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="uk" data-root="./">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <script src="./js/demo.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <title>JMkukirin — запчастини для самокатів</title>
+  
+  <meta name="description" content="Запчастини для електросамокатів Kukirin, Xiaomi, Kugoo, Ninebot. Гальмівні колодки від 90 ₴ за пару, доставка Новою Поштою.">
+  <meta property="og:site_name" content="JMkukirin">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JMkukirin — запчастини для самокатів">
+  <meta property="og:description" content="Запчастини для електросамокатів Kukirin, Xiaomi, Kugoo, Ninebot. Гальмівні колодки від 90 ₴ за пару, доставка Новою Поштою.">
+  <meta property="og:image" content="https://evgenevgenuk.github.io/jmkukirin-demo/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./img/logo.svg">
+  <link rel="preload" href="./fonts/Unbounded-800-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="demo-bar">Демо-версія магазину: товари й ціни тестові, замовлення не оформлюються.</div>
+<header class="header">
+  <div class="wrap header-in">
+    <a href="./" class="logo"><img src="./img/logo.svg" alt="" width="34" height="34"><span class="logo-text">JM<span>kukirin</span></span></a>
+    <form action="#" data-action="/catalog" class="search" role="search"><input name="q" placeholder="Колодки, шина, G2 Pro…" aria-label="Пошук" value=""></form>
+    <nav class="nav">
+      <a href="./catalog/" class="">Каталог</a>
+      <a href="./delivery/" class="">Доставка</a>
+      <a href="./login/">Увійти</a>
+    </nav>
+    <a href="./cart/" class="cart-btn" aria-label="Кошик, товарів: 0">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1.5 12h-11z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span class="cart-label">Кошик</span>
+    </a>
+    <details class="menu">
+      <summary aria-label="Меню"><svg class="i-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></summary>
+      <nav class="menu-list">
+        <a href="./catalog/">Каталог</a>
+        <a href="./delivery/">Доставка й оплата</a>
+        <a href="./contacts/">Контакти</a>
+        <a href="./login/">Увійти</a>
+        <a href="https://t.me/JMkukirinHelpbot" target="_blank" rel="noopener">Підтримка в Telegram</a>
+      </nav>
+    </details>
+  </div>
+</header>
+<main class="wrap">
+
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Колодки, що витримують стант.</h1>
+    <p>Запчастини для Kukirin, Xiaomi, Kugoo та Ninebot. Гальмівні колодки від 90&nbsp;₴ за пару, відправляємо Новою Поштою максимально швидко.</p>
+    <div class="hero-btns">
+      <a class="btn lg" href="./catalog/brake-pads/">Обрати колодки</a>
+      <a class="btn lg ghost" href="./catalog/">Весь каталог</a>
+    </div>
+    <span class="tg-tip"><a class="tg-chip" href="https://t.me/JMkukirinHelpbot" target="_blank" rel="noopener" aria-describedby="tg-tip-1"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19.5c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13.2 1.4 11.7c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>@JMkukirinHelpbot</a><span class="tg-pop" role="tooltip" id="tg-tip-1">Наш Telegram-бот: статус посилки, трек-номер і зв'язок з живою людиною. Натисніть, щоб відкрити.</span></span>
+  </div>
+  <form class="picker" action="#" data-action="/catalog">
+    <div>
+      <h2>Який у вас самокат?</h2>
+      <p class="muted">Покажемо лише те, що точно підійде.</p>
+    </div>
+    <fieldset class="chips">
+      <legend class="sr-only">Модель самоката</legend>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-c1-pro" required ><span>Kukirin C1 Pro</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g2" required ><span>Kukirin G2</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g2-max" required ><span>Kukirin G2 Max</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g2-pro" required ><span>Kukirin G2 Pro</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g3" required ><span>Kukirin G3</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g3-pro" required ><span>Kukirin G3 Pro</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g4" required ><span>Kukirin G4</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-g4-max" required ><span>Kukirin G4 Max</span></label>
+      
+      <label class="chip"><input type="radio" name="model" value="kukirin-s1-pro" required ><span>Kukirin S1 Pro</span></label>
+      
+      
+      <details class="chips-more"><summary><span class="chip-like">Ще 4 моделі</span></summary>
+        <div class="chips-rest"><label class="chip"><input type="radio" name="model" value="kugoo-m4" ><span>Kugoo M4</span></label><label class="chip"><input type="radio" name="model" value="ninebot-max-g30" ><span>Ninebot Max G30</span></label><label class="chip"><input type="radio" name="model" value="xiaomi-m365" ><span>Xiaomi M365</span></label><label class="chip"><input type="radio" name="model" value="xiaomi-pro2" ><span>Xiaomi Pro 2</span></label></div>
+      </details>
+      
+    </fieldset>
+    <button class="btn light wide">Показати запчастини</button>
+  </form>
+</section>
+
+<section class="cats" aria-label="Категорії">
+  
+  <a href="./catalog/brake-pads/" class="cat"><span class="cat-name">Гальмівні колодки</span><span class="muted">від 90 ₴</span></a>
+  
+  <a href="./catalog/brake-discs/" class="cat"><span class="cat-name">Гальмівні диски</span><span class="muted">від 349 ₴</span></a>
+  
+  <a href="./catalog/tires/" class="cat"><span class="cat-name">Шини та камери</span><span class="muted">від 249 ₴</span></a>
+  
+  <a href="./catalog/controllers/" class="cat"><span class="cat-name">Контролери</span><span class="muted">від 2 499 ₴</span></a>
+  
+  <a href="./catalog/displays/" class="cat"><span class="cat-name">Дисплеї та курки</span><span class="muted">від 1 199 ₴</span></a>
+  
+  <a href="./catalog/chargers/" class="cat"><span class="cat-name">Зарядні пристрої</span><span class="muted">від 699 ₴</span></a>
+  
+  <a href="./catalog/suspension/" class="cat"><span class="cat-name">Амортизатори</span><span class="muted">від 1 499 ₴</span></a>
+  
+</section>
+
+<section class="block">
+  <div class="block-head"><h2>Найчастіше беруть</h2><a href="./catalog/">Усі товари</a></div>
+  <div class="grid"><a class="card" href="./product/kolodky-standart/">
+  <div class="card-img"><img src="./img/part.svg" alt="" loading="lazy">
+    <span class="badge">−40%</span>
+    
+  </div>
+  <div class="card-body">
+    <span class="card-name">Колодки гальмівні (пара) — Standart</span>
+    <span class="card-price"><b>90 ₴</b> <s>149 ₴</s></span>
+    
+  </div>
+</a>
+<a class="card" href="./product/kolodky-metal/">
+  <div class="card-img"><img src="./img/part.svg" alt="" loading="lazy">
+    
+    <span class="badge hit">Хіт</span>
+  </div>
+  <div class="card-body">
+    <span class="card-name">Колодки металокерамічні (пара)</span>
+    <span class="card-price"><b>189 ₴</b></span>
+    
+  </div>
+</a>
+<a class="card" href="./product/kolodky-pack-10/">
+  <div class="card-img"><img src="./img/part.svg" alt="" loading="lazy">
+    <span class="badge">−20%</span>
+    
+  </div>
+  <div class="card-body">
+    <span class="card-name">Набір колодок 10 пар — STUNT PACK</span>
+    <span class="card-price"><b>790 ₴</b> <s>990 ₴</s></span>
+    
+  </div>
+</a>
+<a class="card" href="./product/tire-10x3/">
+  <div class="card-img"><img src="./img/part.svg" alt="" loading="lazy">
+    
+    <span class="badge hit">Хіт</span>
+  </div>
+  <div class="card-body">
+    <span class="card-name">Шина безкамерна 10x3.0</span>
+    <span class="card-price"><b>899 ₴</b></span>
+    
+  </div>
+</a>
+</div>
+</section>
+
+<section class="facts">
+  <div><b>Відправляємо швидко</b>Стараємось відправляти максимально швидко.</div>
+  <div><b>Сумісність перевірена</b>У кожного товару — список моделей, до яких він підходить.</div>
+  <div><b>Жива людина поруч</b>Не впевнені, що підійде? <a href="https://t.me/JMkukirinHelpbot" target="_blank" rel="noopener">Напишіть у Telegram</a> — підберемо.</div>
+</section>
+<div class="promo-pop" id="promo-pop" hidden>
+<a class="promo" href="./catalog/brake-pads/" aria-label="Колодки від 90 гривень. Перейти до колодок">
+  <div class="promo-art" aria-hidden="true">
+    <svg viewBox="0 0 200 200" class="promo-svg">
+      <g class="promo-disc">
+        <circle cx="100" cy="100" r="78" fill="#26262b" stroke="#5a5a61" stroke-width="3"/>
+        <circle cx="100" cy="100" r="64" fill="none" stroke="#33333a" stroke-width="10" stroke-dasharray="6 10"/>
+        <circle cx="100" cy="100" r="24" fill="#101012" stroke="#5a5a61" stroke-width="3"/>
+        <g fill="#5a5a61"><circle cx="100" cy="88" r="3"/><circle cx="112" cy="100" r="3"/><circle cx="100" cy="112" r="3"/><circle cx="88" cy="100" r="3"/></g>
+        <path d="M100 22 A78 78 0 0 1 170 70" fill="none" stroke="#ff6a2b" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+      </g>
+      <g class="promo-pad"><rect x="150" y="62" width="26" height="76" rx="8" fill="#ff6a2b"/><rect x="170" y="70" width="14" height="60" rx="4" fill="#c94e1c"/></g>
+      <g class="promo-sparks" stroke="#ffb27a" stroke-width="2.5" stroke-linecap="round">
+        <path d="M150 140 l-14 18"/><path d="M146 146 l-22 10"/><path d="M154 144 l-4 22"/>
+      </g>
+    </svg>
+  </div>
+  <div class="promo-text">
+    <span class="promo-brand">JM<span>kukirin</span></span>
+    <span class="promo-line l1">Колодки</span>
+    <span class="promo-line l2">від 90 грн</span>
+    <span class="promo-price"><span class="promo-cta">Обрати →</span></span>
+  </div>
+</a>
+  <button type="button" class="promo-x" aria-label="Закрити рекламу">×</button>
+</div>
+<script src="./js/promo.js" defer></script>
+</main>
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div><b>JM<span>kukirin</span></b><br>Запчастини для електросамокатів.</div>
+    <div><a href="./catalog/">Каталог</a><br><a href="./delivery/">Доставка й оплата</a><br><a href="./contacts/">Контакти</a><br><a href="https://t.me/JMkukirinHelpbot" target="_blank" rel="noopener">Підтримка в Telegram</a></div>
+    <div>Нова Пошта · LiqPay · накладений платіж<br>© 2026 JMkukirin</div>
+  </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="uk" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <script src="../js/demo.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <title>Оформлення · JMkukirin</title>
+  
+  <meta name="description" content="Запчастини для електросамокатів Kukirin, Xiaomi, Kugoo, Ninebot. Гальмівні колодки від 90 ₴ за пару, доставка Новою Поштою.">
+  
+  <meta property="og:site_name" content="JMkukirin">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Оформлення">
+  <meta property="og:description" content="Запчастини для електросамокатів Kukirin, Xiaomi, Kugoo, Ninebot. Гальмівні колодки від 90 ₴ за пару, доставка Новою Поштою.">
+  
+  <meta property="og:image" content="https://evgenevgenuk.github.io/jmkukirin-demo/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="icon" href="../img/logo.svg">
+  <link rel="preload" href="../fonts/Unbounded-800-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="demo-bar">Демо-версія магазину: товари й ціни тестові, замовлення не оформлюються.</div>
+<header class="header">
+  <div class="wrap header-in">
+    <a href="../" class="logo"><img src="../img/logo.svg" alt="" width="34" height="34"><span class="logo-text">JM<span>kukirin</span></span></a>
+    <form action="#" data-action="/catalog" class="search" role="search"><input name="q" placeholder="Колодки, шина, G2 Pro…" aria-label="Пошук" value=""></form>
+    <nav class="nav">
+      <a href="../catalog/" class="">Каталог</a>
+      <a href="../delivery/" class="">Доставка</a>
+      <a href="../login/">Увійти</a>
+    </nav>
+    <a href="../cart/" class="cart-btn" aria-label="Кошик, товарів: 1">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1.5 12h-11z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span class="cart-label">Кошик</span><span class="cart-count">1</span>
+    </a>
+    <details class="menu">
+      <summary aria-label="Меню"><svg class="i-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></summary>
+      <nav class="menu-list">
+        <a href="../catalog/">Каталог</a>
+        <a href="../delivery/">Доставка й оплата</a>
+        <a href="../contacts/">Контакти</a>
+        <a href="../login/">Увійти</a>
+        <a href="https://t.me/JMkukirinHelpbot" target="_blank" rel="noopener">Підтримка в Telegram</a>
+      </nav>
+    </details>
+  </div>
+</header>
+<main class="wrap">
+<div class="flash ok">Додано в кошик</div>
+
+<h1>Оформлення замовлення</h1>
+
+<div class="checkout">
+  <form method="post" action="#" data-action="/checkout" class="form">
+    
+    <h3>1. Контакти</h3>
+    <label>Ім'я та прізвище*<input name="customer_name" autocomplete="name" value="" required></label>
+    <label>Телефон*<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+380…" value="" required></label>
+    <label>Email (необов'язково)<input name="email" type="email" autocomplete="email" inputmode="email" value=""></label>
+    <h3>2. Доставка Новою Поштою</h3>
+    <div class="np" data-np>
+      <div class="combo">
+        <label for="np-city">Місто*</label>
+        <input id="np-city" name="np_city" value="" placeholder="Почніть вводити: Київ, Львів…" autocomplete="off" required
+          role="combobox" aria-expanded="false" aria-controls="np-city-list" aria-autocomplete="list">
+        <ul class="combo-list" id="np-city-list" role="listbox" hidden></ul>
+        <input type="hidden" name="np_city_ref" value="">
+      </div>
+      <fieldset class="np-kind" disabled>
+        <legend class="sr-only">Куди доставити</legend>
+        <label><input type="radio" name="np_kind" value="branch" checked><span>Відділення</span></label>
+        <label><input type="radio" name="np_kind" value="postomat" ><span>Поштомат</span></label>
+      </fieldset>
+      <div class="combo">
+        <label for="np-wh">Відділення / поштомат*</label>
+        <input id="np-wh" name="np_warehouse" value="" placeholder="Спершу оберіть місто" autocomplete="off" required disabled
+          role="combobox" aria-expanded="false" aria-controls="np-wh-list" aria-autocomplete="list">
+        <ul class="combo-list" id="np-wh-list" role="listbox" hidden></ul>
+        <input type="hidden" name="np_warehouse_ref" value="">
+      </div>
+      <p class="np-hint muted" aria-live="polite"></p>
+    </div>
+    <h3>3. Оплата</h3>
+    <label class="radio"><input type="radio" name="payment_method" value="liqpay" checked> Карткою онлайн (LiqPay, Apple/Google Pay)</label>
+    <label class="radio"><input type="radio" name="payment_method" value="cod" > Накладений платіж при отриманні</label>
+    <label>Коментар<textarea name="comment" rows="2"></textarea></label>
+    <label>Промокод
+      <span class="promo-row"><input name="promo" value="" autocomplete="off" autocapitalize="characters"><button class="btn ghost" name="apply_promo" value="1" formnovalidate>Застосувати</button></span>
+    </label>
+    
+    <p class="muted">Вже маєте акаунт? <a href="../login/">Увійдіть</a>, щоб бачити замовлення в кабінеті.</p>
+    <button class="btn">Підтвердити замовлення</button>
+  </form>
+  <aside class="summary">
+    <h3>Ваше замовлення</h3>
+    <div class="row"><span>Набір колодок 10 пар — STUNT PACK × 1</span><b>790 ₴</b></div>
+    
+    <div class="row big"><span>До сплати</span><b>790 ₴</b></div>
+    <p class="muted">Доставка — за тарифами Нової Пошти.</p>
+  </aside>
+</div>
+<script src="../js/np-picker.js" defer></script>
+</main>
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div><b>JM<span>kukirin</span></b><br>Запчастини для електросамокатів.</div>
+    <div><a href="../catalog/">Каталог</a><br><a href="../delivery/">Доставка й оплата</a><br><a href="../contacts/">Контакти</a><br><a href="https://t.me/JMkukirinHelpbot" target="_blank" rel="noopener">Підтримка в Telegram</a></div>
+    <div>Нова Пошта · LiqPay · накладений платіж<br>© 2026 JMkukirin</div>
+  </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+/* Дизайн-токени JMkukirin — єдине джерело кольорів, шрифтів і відступів */
+:root {
+  color-scheme: dark;
+  /* кольори */
+  --c-paper: #101012;
+  --c-surface: #19191c;
+  --c-ink: #f2f1ec;
+  --c-ink-2: #a3a39e;
+  --c-rule: #2c2c31;
+  --c-rule-strong: #45454c;
+  --c-accent: #ff6a2b;
+  --c-accent-ink: #101012;
+  --c-accent-hover: #ff8a55;
+  --c-ok: #5cc98a;
+  --c-ok-bg: #12301f;
+  --c-warn: #f0b44c;
+  --c-warn-bg: #33270f;
+  --c-err: #ff7d6e;
+  --c-err-bg: #3a1714;
+  --c-info: #8ab6ff;
+  --c-info-bg: #142640;
+  --c-tg: #2aabee;
+  --c-tg-ink: #0e0e10;
+  --c-tg-hover: #55bdf2;
+  --c-muted-bg: #26262b;
+  --c-img-bg: #222226;
+
+  /* типографіка */
+  --f-body: "Golos Text", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --f-display: "Unbounded", "Golos Text", system-ui, sans-serif;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.5rem;
+  --fs-hero: clamp(2.375rem, 4.4vw, 4rem);
+
+  /* відступи: шкала 4px */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --header-h: 64px;
+  /* рух: пряма реакція — коротко, зміна контексту — довше */
+  --dur-fast: 120ms;   /* hover, press, focus */
+  --dur-ctx: 220ms;    /* поява повідомлень, зміна вмісту */
+  --dur: var(--dur-fast); /* сумісність зі старими викликами */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
